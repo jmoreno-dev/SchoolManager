@@ -2,8 +2,11 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Welcome.module.css";
 
 function Welcome() {
+
+    {/* Use the useNavigate hook to programmatically navigate */ }
     const navigate = useNavigate();
 
+    {/* Handler for going to login page when Get Started button is clicked */ }
     function handleGetStarted() {
         navigate("login");
     }
