@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
-import "./Welcome.module.css";
+import styles from "./Welcome.module.css";
 
 function Welcome() {
     const navigate = useNavigate();
 
     function handleGetStarted() {
-        navigate("/Login");
+        navigate("login");
     }
 
     return (
-        <div className="style.welcome-container">
+        <div className={styles["welcome-container"]}>
             <h2>Welcome to the School Manager App!</h2>
             <p>Manage your school activities efficiently and effectively.</p>
             <button onClick={handleGetStarted}>Get Started</button>
