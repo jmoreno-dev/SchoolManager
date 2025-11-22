@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for buttons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.90);
+}
+
+/* Styles for links */
+a {
+    color: #FFD700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
