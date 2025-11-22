@@ -7,15 +7,22 @@ function Welcome() {
 
     // Handler for going to login page when Get Started button is clicked
     function handleGetStarted() {
+        navigate("register");
+    }
+    // Handler for going to login page when Sign In link is clicked
+    function handleSignIn() {
         navigate("login");
     }
 
     return (
-        <div className={styles["welcome-container"]}>
-            <h2>Welcome to the School Manager App!</h2>
-            <p>Manage your school activities efficiently and effectively.</p>
-            <button onClick={handleGetStarted}>Get Started</button>
-        </div>
+        <section className={styles["welcome-section"]}>
+            <h1>Welcome to the School Manager App!</h1>
+            <h3>Manage your school activities efficiently and effectively.</h3>
+            <button onClick={handleGetStarted}>Get started</button>
+            <div className={styles["sign-in"]}>
+                <span>You already have an account? <a href="" onClick={handleSignIn}>Sign in here.</a></span>
+            </div>
+        </section>
     );
 }
 
