@@ -14,20 +14,16 @@ function Login() {
         event.preventDefault();
         // Add login logic here
         console.log("Login submitted");
-    }
-
-    // Temporary navigation handler (for demonstration purposes)
-    function handleTemporalNavigation(event) {
-        event.preventDefault();
         navigate("/home");
     }
+
     return (
         <section className={styles["login-section"]}>
             <h2>Login to your account</h2>
             <form onSubmit={handleSubmit} >
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
-                <button type="submit" onClick={handleTemporalNavigation}>Login</button>
+                <button type="submit">Login</button>
             </form>
 
             <a onClick={handleForgotPassword}>Forgot your password? </a>
