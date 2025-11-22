@@ -40,7 +40,7 @@ function Register() {
                                 <input type="email" id="email" name="email" required />
                                 <label htmlFor="password">Password:</label>
                                 <input type="password" id="password" name="password" required />
-                                <button type="submit" onClick={() => setRole("Teacher")} disabled={isTeacherDisabled}>Register as Teacher</button>
+                                <button type="submit" onClick={() => setRole("Teacher")} disabled={isTeacherDisabled || isStudentDisabled}>Register as Teacher</button>
                             </form>
                             {messageTeacher && <p className={styles["success-message"]}>{messageTeacher}</p>}
                         </card-body>
@@ -58,13 +58,16 @@ function Register() {
                                 <input type="email" id="email" name="email" required />
                                 <label htmlFor="password">Password:</label>
                                 <input type="password" id="password" name="password" required />
-                                <button type="submit" onClick={() => setRole("Student")} disabled={isStudentDisabled}>Register as Student</button>
+                                <button type="submit" onClick={() => setRole("Student")} disabled={isStudentDisabled || isTeacherDisabled}>Register as Student</button>
                             </form>
-                            {messageStudent && <><p className={styles["success-message"]}>{messageStudent}</p><button onClick={() => navigate("/login")}>Go to Login</button></>}
+                            {messageStudent && <p className={styles["success-message"]}>{messageStudent}</p>}
                         </card-body>
                     </card>
                 </article>
             </div>
+
+            <button className={styles["login-button"]} onClick={() => navigate("/login")}>Go to Login</button>
+
         </section>
     );
 }
