@@ -38,6 +38,7 @@ card-body {
 form {
     display: flex;
     flex-direction: column;
+    width: 20vw;
 }
 
 button:disabled {
@@ -45,13 +46,13 @@ button:disabled {
     cursor: not-allowed;
 }
 
+.login-button {
+    margin-top: 15px;
+}
+
+/* Success message style */
 .success-message {
     color: #28a745;
     font-weight: bold;
     margin-bottom: 15px;
-}
-
-.login-button {
-    margin-top: 15px;
-
 }
