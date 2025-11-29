@@ -14,6 +14,9 @@ function App() {
       <Route path='/register' element={<Register />} />
       <Route path='/forgot-password' element={<ForgotPassword />} />
       <Route path='/home' element={<Home />} />
+      <Route path='/students' element={<Students />} />
+      <Route path='/teachers' element={<Teachers />} />
+      <Route path='/classes' element={<Classes />} />
     </Routes>
   )
 }
