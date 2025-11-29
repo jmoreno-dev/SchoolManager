@@ -4,6 +4,9 @@ import Login from './components/Login/Login.jsx'
 import Register from './components/Register/Register.jsx'
 import ForgotPassword from './components/ForgotPassword/ForgotPassword.jsx'
 import Home from './components/Home/Home.jsx'
+import Students from './components/Students/Students.jsx'
+import Teachers from './components/Teachers/Teachers.jsx'
+import Classes from './components/Classes/Classes.jsx'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
