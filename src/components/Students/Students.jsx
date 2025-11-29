@@ -1,4 +1,5 @@
 import styles from './Students.module.css';
+import NavBar from '../NavBar/NavBar.jsx';
 import { useState } from 'react';
 
 function Students() {
@@ -11,6 +12,7 @@ function Students() {
 
     return (
         <>
+            <NavBar />
             <h1>Students</h1>
             <section>
                 <table className={styles["students-table"]}>
