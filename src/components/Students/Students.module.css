@@ -1,3 +1,7 @@
+h1 {
+    margin: 16px;
+}
+
 .students-table {
     width: 100%;
     border-collapse: collapse;
