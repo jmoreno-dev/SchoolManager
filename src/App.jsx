@@ -4,7 +4,6 @@ import Login from './components/Login/Login.jsx'
 import Register from './components/Register/Register.jsx'
 import ForgotPassword from './components/ForgotPassword/ForgotPassword.jsx'
 import Home from './components/Home/Home.jsx'
-import People from './components/People/People.jsx'
 import Students from './components/Students/Students.jsx'
 import Teachers from './components/Teachers/Teachers.jsx'
 import Classes from './components/Classes/Classes.jsx'
@@ -18,7 +17,6 @@ function App() {
       <Route path='/register' element={<Register />} />
       <Route path='/forgot-password' element={<ForgotPassword />} />
       <Route path='/home' element={<Home />} />
-      <Route path='/people' element={<People />} />
       <Route path='/students' element={<Students />} />
       <Route path='/teachers' element={<Teachers />} />
       <Route path='/classes' element={<Classes />} />
