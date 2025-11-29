@@ -17,7 +17,6 @@ function Teachers() {
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
-                            <th>Age</th>
                             <th>Class</th>
                             <th>Options</th>
                         </tr>
@@ -27,7 +26,6 @@ function Teachers() {
                             <tr key={teacher.id}>
                                 <td>{teacher.id}</td>
                                 <td>{teacher.name}</td>
-                                <td>{teacher.age}</td>
                                 <td>{teacher.class}</td>
                                 <td>
                                     <button>Update</button>
