@@ -38,6 +38,8 @@ function Teachers() {
                     </tbody>
                 </table>
             </section>
+            <button className={styles["add-btn"]}>+ Add Teacher</button>
+
         </>
     );
 }
